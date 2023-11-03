@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.entity.Alumno;
 import com.example.service.AlumnoService;
 
+
 @RestController
 @RequestMapping("/rest/alumno")
 public class AlumnoController {
@@ -32,6 +33,7 @@ public class AlumnoController {
 		List<Alumno> lista = service.listaAlumno();
 		return ResponseEntity.ok(lista);
 	}
+	
 
 	@GetMapping("/porEmail/{filtro}")
 	@ResponseBody
